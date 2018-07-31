@@ -12,7 +12,14 @@
         <property name="message" value="This is message from simple bean 2"/>
     </bean>
 
-    <bean id="printMessage" class="SingletonBean.Message" scope="singleton">
+    <bean id="printMessage3" class="SingletonBean.Message" scope="singleton">
+    </bean>
+
+    <bean id="printMessage4" class="PrototypeBean.Message" scope="prototype">
+    </bean>
+
+    <bean id="printMessage5" class="Init_DestroyBean.Message" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="message" value="This is simple text message"/>
     </bean>
 
 </beans>
