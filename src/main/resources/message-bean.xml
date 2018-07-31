@@ -12,4 +12,7 @@
         <property name="message" value="This is message from simple bean 2"/>
     </bean>
 
+    <bean id="printMessage" class="SingletonBean.Message" scope="singleton">
+    </bean>
+
 </beans>

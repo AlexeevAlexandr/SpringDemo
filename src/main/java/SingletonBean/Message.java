@@ -1,4 +1,4 @@
-package SpringBeanFactoryContainer;
+package SingletonBean;
 class Message{
     private String message;
 

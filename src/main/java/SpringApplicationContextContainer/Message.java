@@ -1,6 +1,6 @@
 package SpringApplicationContextContainer;
-public class Message{
-    String message;
+class Message{
+    private String message;
 
     public String getMessage(){
         return "Message: " + message;
