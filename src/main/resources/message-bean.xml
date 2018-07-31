@@ -22,4 +22,11 @@
         <property name="message" value="This is simple text message"/>
     </bean>
 
+    <bean id="message6" class="BeanPostProcessorDemo.Message" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="message" value="This is simple message"/>
+
+    </bean>
+
+    <bean class="BeanPostProcessorDemo.BeanPostProcessorDemo"/>
+
 </beans>
