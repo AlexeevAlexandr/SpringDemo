@@ -5,6 +5,9 @@
       <configuration>
         <fileset id="fileset" name="Message Bean" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/message-bean.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/collection-injection-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/autowiring-by-name-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/autowiring-by-type-config.xml</file>
         </fileset>
       </configuration>
     </facet>
