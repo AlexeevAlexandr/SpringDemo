@@ -7,4 +7,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <context:annotation-config/>
+
+    <bean id="exam" class="Annotations.Autowired.Exam">
+    </bean>
+
+    <bean id="answerChecker" class="Annotations.Autowired.AnswerChecker">
+    </bean>
 </beans>
