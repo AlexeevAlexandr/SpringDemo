@@ -13,7 +13,9 @@ public class MessageRunner {
         Message message = context.getBean(Message.class);
 
         try(Scanner scanner = new Scanner(System.in)) {
-            message.setMessage("This is simple message");
+            System.out.println("Enter message");
+            String string = scanner.nextLine();
+            message.setMessage(string);
             System.out.println(message);
         }catch(Exception e){e.printStackTrace();}
     }
