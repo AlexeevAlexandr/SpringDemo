@@ -5,7 +5,7 @@
 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="message" class="EventHandling.Message">
-        <property name="message" value="This is simple message."/>
+        <property name="message" value="This is simple message"/>
     </bean>
 
     <bean id="myStartEventHandler" class="EventHandling.MyStartEventHandler"/>
