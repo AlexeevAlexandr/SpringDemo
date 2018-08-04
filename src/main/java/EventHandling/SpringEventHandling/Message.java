@@ -1,4 +1,4 @@
-package EventHandling;
+package EventHandling.SpringEventHandling;
 
 public class Message {
     private String message;

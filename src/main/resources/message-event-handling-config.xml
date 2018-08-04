@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="message" class="EventHandling.Message">
+    <bean id="message" class="EventHandling.SpringEventHandling.Message">
         <property name="message" value="This is simple message"/>
     </bean>
 
-    <bean id="myStartEventHandler" class="EventHandling.MyStartEventHandler"/>
+    <bean id="myStartEventHandler" class="EventHandling.SpringEventHandling.MyStartEventHandler"/>
 
-    <bean id="myStopEventHandler" class="EventHandling.MyStopEventHandler"/>
+    <bean id="myStopEventHandler" class="EventHandling.SpringEventHandling.MyStopEventHandler"/>
 
 </beans>

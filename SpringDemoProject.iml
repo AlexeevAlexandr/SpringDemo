@@ -13,6 +13,7 @@
           <file>file://$MODULE_DIR$/src/main/resources/annotation-jsr250-config.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/AnnotationWithoutXMLFile/MessageConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/resources/message-event-handling-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/my-event-config.xml</file>
         </fileset>
       </configuration>
     </facet>
