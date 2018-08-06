@@ -1,0 +1,15 @@
+package Spring.EventHandling.SpringEventHandling;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MessageRunner {
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext("Spring/message-event-handling-config.xml");
+        context.start();
+        Message message = (Message) context.getBean("message");
+        System.out.println(message);
+        context.stop();
+    }
+}

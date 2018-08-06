@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="fromBeanMessage1" class="Spring.SpringBeanFactoryContainer.Message">
+        <property name="message" value="This is message from simple bean 1"/>
+    </bean>
+
+    <bean id="fromBeanMessage2" class="Spring.SpringApplicationContextContainer.Message">
+        <property name="message" value="This is message from simple bean 2"/>
+    </bean>
+
+    <bean id="printMessage3" class="Spring.SingletonBean.Message" scope="singleton">
+    </bean>
+
+    <bean id="printMessage4" class="Spring.PrototypeBean.Message" scope="prototype">
+    </bean>
+
+    <bean id="printMessage5" class="Spring.Init_DestroyBean.Message" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="message" value="This is simple text message"/>
+    </bean>
+
+    <bean id="message6" class="Spring.BeanPostProcessorDemo.Message" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="message" value="This is simple message"/>
+
+    </bean>
+
+    <bean class="Spring.BeanPostProcessorDemo.BeanPostProcessorDemo"/>
+
+</beans>
